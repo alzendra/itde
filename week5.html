@@ -39,23 +39,10 @@
             <a-marker preset="kanji" id='marker-kanji' registerevents> 
                 <a-box position='0 0.5 0' material='color: blue;' jump></a-box> 
             </a-marker>
-            <a-marker type="pattern" url='pattern-rabbit.patt'>
-
-                <a-torus position="-2 1 -5" color= "green" radius="1.2" animation="property: components.material.material.color;type: color; from: green; to: red; loop: true; dur: 10000"></a-torus> 
-<a-plane src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/illustration/758px-Canestra_di_frutta_(Caravaggio).jpg" 
-width="7" height="7" rotation="-55 0 0"
-position="-2 -2 -5" color ="purple"></a-plane>
-<a-cylinder color="yellow" height="1.9" radius="0.05"
-position="-2 -1 -5"></a-cylinder>
-<a-cylinder color="yellow" height="2" radius="0.05"
-position="-3 -1 -5"></a-cylinder>
-<a-torus-knot position="-3 1 -5" color= "orange" radius="1.2"
-radius-tubular="0.15" p="2" q="7" animation="property: rotation; to: 0 0 360; loop: true; dur: 10000"></a-torus-knot> 
-<a-plane width="9" height="2" position="3 1 -9"></a-plane>
-<a-text value="Доброго вечора, ми з України" color= 'black' width="10" position="-0.5 1 -7" 
-font="Segoe_Script_Bold-msdf.json" negate="false" ></a-text>
-
+			
+            <a-marker type="pattern" url='pattern-rabbit.patt' id='my-marker' registerevents>
+                <a-sphere position="0 0.5 0" radius="0.5" material = "color: green;" jump></a-sphere>
             </a-marker>
 			<a-entity camera><a-cursor></a-cursor></a-entity>
 		</a-scene>
-</html>
+	</html>
